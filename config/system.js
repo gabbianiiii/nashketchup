@@ -9,7 +9,7 @@ const client = new tmi.Client({
 		username: process.env.USERNAME, // Twitch username
 		password: process.env.PASSWORD  // Twitch OAuth token
 	},
-	channels: process.env.CHANNELS // List of channels to join
+	channels: [ process.env.CHANNELS ] // List of channels to join
 });
 
 export default client;

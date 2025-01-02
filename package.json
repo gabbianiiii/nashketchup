@@ -1,0 +1,28 @@
+{
+  "name": "nashketchup",
+  "version": "1.0.0",
+  "description": "A Twitch bot for use into the game PCG (Pokemon Community Game)",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "node-fetch": "^2.7.0",
+    "tmi.js": "^1.8.5",
+    "tr46": "^0.0.3",
+    "webidl-conversions": "^3.0.1",
+    "whatwg-url": "^5.0.0",
+    "ws": "^8.18.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabbian1/nashketchup.git"
+  },
+  "author": "Gabbiani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gabbian1/nashketchup/issues"
+  },
+  "homepage": "https://github.com/gabbian1/nashketchup#readme"
+}

@@ -1,11 +1,8 @@
-import client from "./config/system";
+import client from "./config/system.js";
+import { catchSystem } from "./modules/pokecatch.js";
+import { pokeShop } from "./modules/pokeshop.js";
 
-client.connect().catch(console.error);
-
-client.on('message', (channel, tags, message, self) => {
-    if(self) return;
-
-    if(message.toLowerCase() === '!hello') {
-        client.say(channel, `@${tags.username}, heya!`);
-    }
-});
+client.connect().then(() => {
+    catchSystem(client);
+    pokeShop(client);
+}).catch(console.error);
