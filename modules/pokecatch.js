@@ -4,8 +4,10 @@ function catchSystem(client) {
     client.on('message', (channel, tags, message, self) => {
         if(self) return;
 
-        if(message.toLowerCase() === '!hello') {
-            client.say(channel, `@${tags.username}, heya!`);
+        if(tags.username.toLowerCase() === 'pokemoncommunitygame'){
+            if(message.toLowerCase() === 'selvagem apareceu') {
+
+            }
         }
     });
 }

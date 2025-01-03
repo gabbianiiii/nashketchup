@@ -1,0 +1,31 @@
+{
+    "bag": {
+        "itens": [
+            {
+                "id": 1,
+                "name": "Item Example",
+                "price": 100
+            }
+        ],
+        "balls": [
+            {
+                "id": 1,
+                "name": "pokeball",
+                "quantity": 10,
+                "price": 50
+            },
+            {
+                "id": 2,
+                "name": "pokeball",
+                "quantity": 10,
+                "price": 50
+            },
+            {
+                "id": 3,
+                "name": "pokeball",
+                "quantity": 10,
+                "price": 50
+            }
+        ]
+    }
+}

@@ -5,11 +5,18 @@ const client = new tmi.Client({
 	options: { 
         debug: true // Enable debug mode
     },
+	connection: {
+        reconnect: true,
+        secure: true
+    },
 	identity: {
-		username: process.env.USERNAME, // Twitch username
-		password: process.env.PASSWORD  // Twitch OAuth token
+		username: process.env.TWITCH_USERNAME, // Twitch username
+		password: process.env.TWITCH_PASSWORD  // Twitch OAuth token
 	},
-	channels: [ process.env.CHANNELS ] // List of channels to join
+	channels: [ process.env.TWITCH_PASSWORD ] // List of channels to join
 });
 
+const pkm_trainer = process.env.TWITCH_USERNAME;
+
 export default client;
+export { pkm_trainer };
